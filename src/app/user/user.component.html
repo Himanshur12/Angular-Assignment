@@ -1,0 +1,77 @@
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- Brand/logo -->
+    <a class="navbar-brand" href="#">
+      <img src="../../assets/logo.jpg" alt="logo" style="width:80px; height: 30px">
+    </a>
+    
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/dashboard" >Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/user" >User</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/product">Product</a>
+      </li>
+      <li class="nav-item">
+            <a class="nav-link" routerLink="/dashboard" >Reviews</a>
+          </li>
+          <li class="nav-item">
+                <a class="nav-link" routerLink="/dashboard" >About Us</a>
+              </li>
+    </ul>
+   
+  <ul class="navbar-nav ml-auto">
+        <li><a routerLink="/profile"><span class="glyphicon glyphicon-user"></span>My Profile</a></li>
+      </ul>
+    </nav>
+<div class="container">
+   
+    <div class="row">
+        <div class="panel panel-primary filterable">
+            <div class="panel-heading">
+                <h3 class="panel-title">Users</h3>
+                <div class="pull-right">
+                    <button class="btn btn-default btn-xs btn-filter"><span class="glyphicon glyphicon-filter"></span> Filter</button>
+                </div>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr class="filters">
+                        <th><input type="text" class="form-control" placeholder="#" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="Name" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="Email" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="Address" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="Action" disabled></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Himanshu</td>
+                        <td>himanshurawat155@gmail.com</td>
+                        <td>Phase 4</td>
+                        <td><button class="btn btn-success" type="button " onclick="edit()" value="Edit">Edit &nbsp;</button><button  type="button" onclick="viewfun()" class="btn btn-warning" value="Edit">View</button><button type="button" onclick="rowdelete()" value="Edit" class="btn btn-danger">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Shivam</td>
+                        <td>shivamsaini@gmail.com</td>
+                        <td>Phase 5</td>
+                        <td><button class="btn btn-success" type="button " onclick="edit()" value="Edit">Edit &nbsp;</button><button  type="button" onclick="viewfun()" class="btn btn-warning" value="Edit">View</button><button type="button" onclick="rowdelete()" value="Edit" class="btn btn-danger">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Ayush</td>
+                        <td>ayushkashyap@gmail.com</td>
+                        <td>Phase 6</td>
+                        <td><button class="btn btn-success" type="button " onclick="edit()" value="Edit">Edit &nbsp;</button><button  type="button" onclick="viewfun()" class="btn btn-warning" value="Edit">View</button><button type="button" onclick="rowdelete()" value="Edit" class="btn btn-danger">Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
